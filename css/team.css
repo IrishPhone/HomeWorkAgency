@@ -1,0 +1,179 @@
+article.team {
+	max-width: 1176px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: flex-start;
+	margin: 2em auto 0 auto;
+}
+
+p.team-p {
+	max-width: 478px;
+}
+
+p.person {
+	max-width: 662px;
+}
+
+hr.team {
+	width: 134px;
+	text-align: left;
+	margin-left: 0;
+	margin-bottom: 67px;
+}
+
+.team-wrap1 {
+	display: flex;
+	width: 100%;
+}
+
+.team-wrap2 {
+	max-width: 1157px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+}
+
+.team-wrap3-1 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.team-wrap3-2 {
+	margin-top: auto;
+	display: flex;
+	align-items: flex-end;
+}
+
+
+div.team-portrait {
+	display: flex;
+	width: 324px;
+	height: 460px;
+	margin-right: 4em;
+	margin-bottom: 2em;
+	flex-shrink: 0;
+}
+
+.social-links {
+	list-style-type: none;
+	display: inline-flex;
+	font-family: "Open Sans";
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 10px 0 43px 0;
+}
+
+.social-links li {
+	margin: 0 2em 0 0;
+}
+.social-links a {
+	color: black;
+}
+
+.social-links a:hover {
+	color: indianred;
+}
+
+div.team-thumb {
+	max-width: 200px;
+	flex-basis: 200px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+img.team-thumb {
+	width: 100%;
+	min-width: 130px;
+}
+
+div.team-thumb span {
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: relative;
+	bottom: 32px;
+}
+
+/* hovers works @ firefox only ¯\_(ツ)_/¯ */
+div.team-thumb a {
+	opacity: 0;
+}
+
+div.team-thumb a:hover {
+	opacity: 1;
+}
+
+
+@media (max-width: 960px){
+	article.team {
+		margin: 0 10px;
+	}
+	.team-wrap1 {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.team-wrap2 {
+		max-width: 1157px;
+		width: 100%;
+		display: flex;
+		flex-direction: column-reverse;
+
+	}
+
+	.team-wrap3-1 {
+		display: block;
+	}
+
+	.team-wrap3-2 {
+		display: flex;
+		flex: 1 1 51%;
+	}
+	div.team-thumb {
+		margin: 5px;
+	}
+	div.team-portrait {
+		margin-right: 0;
+		margin-left: 0;
+	}	
+}
+
+@media (max-width: 580px){
+	.team-wrap3-2 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 480px){
+
+	.team-wrap3-2 {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1 1 50%;
+	}
+
+	.social-links {
+		list-style-type: none;
+		display: block;
+		margin-left: 1em;
+	}
+	div.team-thumb {
+		margin: 2px;
+		flex-wrap: wrap;
+		flex-shrink: 1;
+	}
+	
+	div.team-thumb img {
+		display: none;
+}

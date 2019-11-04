@@ -1,0 +1,120 @@
+.wrapper-white {
+	background-color: white;
+}
+
+.provide {
+	max-width: 1176px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	padding: 0 20px;
+}
+
+.provide-major {
+	min-width: 50%;
+}
+
+.provide-major > p {
+	width: 82%;
+}
+
+.provide-minors {
+	margin-top: 45px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.provide-minors > section {
+	width: 50%;
+	margin-bottom: 50px;
+}
+
+
+.provide-minor-1::before {
+	content: url('../images/manage-icon.svg');
+}
+
+.provide-minor-2::before {
+	content: url('../images/design-icon.svg');
+}
+
+.provide-minor-3::before {
+	content: url('../images/branding-icon.svg');
+}
+
+.provide-minor-4::before {
+	content: url('../images/animation-icon.svg');
+}
+
+h2.provide-header {
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 42.1902px;
+	line-height: 55px;
+	text-transform: uppercase;
+}
+
+
+
+.button-outlined {
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
+
+.button-outlined a {
+	padding: 1em 4em;
+	background-color: white;
+	border: 2px solid #FF0000;
+	border-radius: 3px;
+
+	text-align: center;
+	color: #FF2D2D;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.button-outlined a:hover {
+	background-color: rgba(255, 0, 0, 0.2);
+}
+
+hr.gray-hr {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	max-width: 1176px;
+}
+
+@media (max-width: 960px){
+	.provide {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.provide-minors {
+		justify-content: center;
+	}
+
+	.provide-minors > section {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.prvide {
+		padding: 0 10px;
+	}
+	h2 {
+		font-size: 10vw;
+		line-height: 13vw;
+	}
+
+	hr {
+		width: 50%;
+	}
+
+	.button-outlined a {
+		padding: 1em;
+	}
+}
+
